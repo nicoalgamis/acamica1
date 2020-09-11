@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6bf04c5b33.js" crossorigin="anonymous"></script> 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
     <body>
-    <header>
+    <header> 
+        <!-- HEADER -->
         <section>    
             <img src="./imagenes/logo.svg" alt="logo" class="logo">
             <div class="nav-var">
-                <input type="checkbox" id="checkbox" />
+                <!-- <input type="checkbox" id="checkbox" />
                 <span></span>
                 <span></span>
-                <span></span>
+                <span></span>    -->
                 <ul class="ul-nav">
                     <li class="item-header">EPISODIOS</li>
                     <li class="item-header">NOSOTROS</li>
@@ -25,28 +29,34 @@
             </ul>
         </section>     
     </header>
+    <!-- MAIN -->
     <main>
         <section>
             <h1>Hello <s class="tachado">world</s> pale blue dot<i class="point">.</i></h1>
                 <div class="text">El portal de podcast que explora el mundo de la programación y
                     la tecnología. Nuevos episodios, todos los jueves cada 15 dias.</div>
                     <button class="button_1">CONOCÉ MÁS</button>
+                    
         </section>
         <!--PODCAST-->
         <section class="general">
-            <h2 class="episodios">Episodios</h2>
+            <h2 class="episodios h2">Episodios</h2>
             <div class="contenedor">
-                <img src="./imagenes/embed1.png" alt="Podcast1" class="spoty1 podcast">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" class="podcast"></iframe>
                 <img src="./imagenes/embed2.png" alt="Podcast2" class="spoty2 podcast">  
                 <img src="./imagenes/embed3.png" alt="Podcast3" class="spoty1 podcast">
                 <img src="./imagenes/embed4.png" alt="Podcast4" class="spoty4 podcast">
             </div>
         </section>
-        <section>
-            <!--TELEFONO-->
-            <div class="general_phone">
+        <!--TELEFONO-->
+        <section class="section_phone">
+            <div class="general_phone container">
+                <div class="img_phone">
+                    <img src="./imagenes/phone.png" alt="">
+                </div>
+        
                 <div class="div_phone">
-                    <h2 class="h2_phone">De donde venimos</h2>
+                    <h2 class="h2_phone h2">De donde venimos</h2>
                         <p class="text_phone">
                         posturings, our imagined self-importance, the delusion that we have some privileged
                         position in the Universe, are challenged by this point of pale light.
@@ -56,14 +66,11 @@
                         in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                     </p>
                 </div>
-                    <div class="img_phone">
-                        <img src="./imagenes/phone.png" alt="">
-                    </div>
             </div>
         </section>
         <section>
             <!--LAS INVITADAS-->
-                <h2 class="h2_invitadas">Invitadas/os estelares</h2>
+                <h2 class="h2_invitadas h2">Invitadas/os estelares</h2>
                 <div class="div_invitadas">
                     <img src="./imagenes/grace-hopper.png" alt="imagen Invitadas" class="img_invitadas">
                     <img src="./imagenes/Katie-Bouman.png" alt="imagen Invitadas" class="img_invitadas">                
@@ -71,40 +78,51 @@
                     <img src="./imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" alt="imagen Invitadas" class="img_invitadas down">
                     <img src="./imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="imagen iInvitadas  down" class="img_invitadas">
                     <img src="./imagenes/susan-kare.png" alt="imagen Invitadas" class="img_invitadas down">
+                    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
                 </div>
         </section>
+        <!-- NUESTROS TEMAS -->
         <section>
-            <h2 class="h2_invitadas">Algunos de nuestross temas</h2>
-                <div class="general_icon">
-                    <div class="icono primero">
-                        <img src="./imagenes/icon1.svg" alt="icono" class="foto1">
+            <h2 class="h2_temas h2">Algunos de nuestros temas</h2>
+                <ul class="general_icon">
+                    <li class="icono margin">
+                        <img src="./imagenes/icon1.svg" alt="icono" class="icon">
                         <p>Trabajo remoto</p>
-                    </div>
-                    <div class="icono margin">
-                        <img src="./imagenes/icon2.svg" alt="icono" class="foto2">
-                        <p class="p_icon2">Repensando la programación</p>
-                    </div>
-                    <div class="icono margin">
-                        <img src="./imagenes/icon3.svg" alt="icono" class="foto3">
+                    </li>
+                    <li class="icono margin">
+                        <img src="./imagenes/icon2.svg" alt="icono" class="icon">
+                        <p>Repensando la programación</p>
+                    </li>
+                    <li class="icono margin">
+                        <img src="./imagenes/icon3.svg" alt="icono" class="icon">
                         <p>Bases del código</p>
-                    </div>
-                    <div class="icono margin">
-                        <img src="./imagenes/icon4.svg" alt="icono" class="foto4">
-                        <p class="p_icon2">seguridad informática</p>
-                    </div>
-                </div>    
+                    </li>
+                    <li class="icono margin">
+                        <img src="./imagenes/icon4.svg" alt="icono" class="icon">
+                        <p>seguridad informática</p>
+                    </li>
+                </ul>    
         </section>
+        <!-- ULTIMAS NOVEDADES -->
         <section class="todo">
             <div>
-                <h2>¿Querés las últimas novedades?</h2>
+                <h2 class="h2 h2_novedades">¿Querés las últimas novedades?</h2>
                 <button class="button_2">ESCUCHÁ LOS EPISODIOS</button>
             </div>
         </section>
     </main>
     <footer>
+        <!-- FOOTER -->
         <section>
-            <p>© 2019— Hello blue pale dot </p>
-
+            <p>© 2019— Hello blue pale dot</p>
+            <script src="https://kit.fontawesome.com/6bf04c5b33.js" crossorigin="anonymous"></script> 
+                <ul class="ul_footer"> 
+                    <li><i class="fab fa-spotify"></i></li>
+                    <li><i class="fab fa-instagram"></i> </li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li<i class="fab fa-telegram"></i><li> 
+                </ul> 
         </section>
     </footer>
 </body>

@@ -7,13 +7,13 @@
 
 h1{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     color: #060A24;
     margin-bottom: auto;
     margin-top: 3.1%;
     text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 0;
+    width: 90%;
 }
 
 .tachado{
@@ -26,150 +26,116 @@ h1{
 .text{
     font-family: 'IBM Plex Mono', monospace;
     margin-top: auto;
-    width: 46%;
-    font-size: 16px;
-    margin-left: 21%;
-    line-height: 24px;
+    width: 90%;
+    font-size: 1.2rem;
 }
 .button_1{
     background-color: #00F3BB;
-    font-family: 'IBM Plex Mono', monospace;;
-    line-height: 24px;
-    font-size: 18px;
-    margin-left: 20%;
-    padding: 0.4% 4.1% 0.4% 4.1%;
-    margin-top: 1.8%;
+    font-family: 'IBM Plex Mono', monospace;
+    border: none;
+    font-size: 2rem;
+    padding: 0.9% 25% 0.9% 25%;
+    margin-top: 0.7%;
+    font-weight: 500;
     
-}
-.button_1:hover{
-    background-color: gold;
 }
 
 /*SPOTIFY*/
 .general{
     background-color: blue;
-    padding-top: 8%;
-    margin-top: 0.1%;
-    padding-bottom: 5.9%;
-    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 45%;
+    width: 95%;
     display: grid;
-    height: 26.7%;
-    clip-path: polygon(0 17%, 100% 0, 100% 88%, 0% 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    width: 100%;
+    margin-bottom: 0.4%;
 }
 .episodios{
     color: rgb(255, 255, 255);
-    margin-left: 13.9%;
+    margin-left: 5%;
     margin-top: 4.8%;
     font-family: 'IBM Plex Sans', sans-serif;
     margin-top: 4.8%;
-}
-.contenedor{
-    padding: 15px;
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
-
+    font-size: 3.7rem;
 }
 .podcast{
-    width: 40.6%;
-    height: 5.9%;
+    width: 90.1%;
+    height: 4.1%;
+    margin: 0.2%;
+    margin-left: auto;
 }
-.spoty1{
-    position: relative;
-    margin-left: 6.9%;
-    margin-bottom: 1.9%;
+.contenedor{
+    text-align: center;
 }
-.spoty2{
-    margin-left: 5%;
-    margin-bottom: 1.9%;
-}
+// .contenedor{
+//     padding: 15px;
+//     position: relative;
+//     flex-wrap: wrap;
+//     display: flex;
 
-.spoty4{
-    margin-left: 5%;
-    margin-bottom: 1.9%;
-}
-
+// }
 
 /* SECTION PHONE */
 .h2_phone{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 48px;
+    font-size: 4rem;
+    width: 90%;
     color: #060A24;
     padding-bottom: 0;
 }
 
-.div_phone{
-    text-align: left;
-    margin-left: 44%;
-    margin-top: 5%;
-}
-.div_phone p{
-    width: 50%;
-}
-.text_phone{
-    width: 32.2%;
-    height: 5.2%;
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin-top: 0.6%;
-}
-.img_phone{
-    position: absolute;
-    top: -30px;
-    min-height: 400px;
-}
-.general_phone{
-    position: relative;
-}
+
 .img_phone img{
-    width: 31.8%;
-    height: 16.9%;
+    margin-top: -90px;
+    margin-left: 0%;
+    height: 9.5%;
+    width: 102.5%;
     position: relative;
-    margin-top: -50px;
-    margin-left: 13.9%
 }
-
-
-/*INVITADAS/OS*/
 .general_phone{
     width: 100%;
 }
+.text_phone{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    letter-spacing: 0;
+    font-size: 1.4rem;
+    width: 90%;
+}
 
+/*INVITADAS/OS*/
+.h2{
+    font-size: 3.7rem;
+    width: 90%;
+    font-weight: 400;
+}
 .div_invitadas{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: auto; 
-    margin-left: -10%;
+    grid-template-rows: repeat(6, 1fr);
 }
+
 .img_invitadas{
     width: 100%;
 }
-.down{
-    margin-top: auto;
-}
-.h2_invitadas{
-    margin-left: 13.9%;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
+
 /*ICONOS*/
-
-.icono{
-    margin-left: 48px;
+.general_icon{
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0px; 
+}
+.icon{
+    width: 32.5%;
+    height: 1.9%;
+}
+.icono p{
+    font-family: "IBMPlexSans-SemiBold";
+    font-size: 2.5rem;
+    font-weight: 600;
     color: #060A24;
-    font-size: 16px;
-    margin-left: 15.3%;
-    width: 100%;
-
-}
-.p_icon2{
-    width: 15.3%;
-}
-
-.margin{
-    margin-left: 10.8%;
-}
-.general_icon img{
-    width: 104px;
-    height: 104px;
+    letter-spacing: 0;
+    text-align: center;
 }
 //ULTIMAS NOVEDADES
 .todo{
@@ -178,35 +144,13 @@ h1{
     clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
 }
 .todo h2{
-    color: wheat;
-    font-size: 48px;
-    font-family: 'IBM Plex Sans', sans-serif;
-
+    text-align: center;
+    color: white;
 }
 .button_2{
     background-color: #00F3BB;
-    padding: 0.4% 4.1% 0.4% 4.1%;
     font-family: 'IBM Plex Mono', monospace;
-    margin-left: 18%;
-}
-@media  screen and (max-width: 320px){
-    // PODCAST
-    .general{
-        width: auto;
-        clip-path: polygon(0 3%, 100% 0, 100% 98%, 0% 100%);
-    }
-    .contenedor{
-        display: inherit;
-        text-align: center;
-    }
-    .podcast{
-        width: 298px;
-        height: 225px;
-    }
-}
-/*ESTO NO ANDA, NO ENTIENDO*/
-@media screen and (max-widht: 320){ 
-    .general_icon{
-        display: flex;
-    }
+    border: none;
+    opacity: 1;
+    width: 90%;
 }
