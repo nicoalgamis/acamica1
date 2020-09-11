@@ -29,6 +29,7 @@ h1 {
   margin-top: auto;
   width: 90%;
   font-size: 1.2rem;
+  margin-bottom: 6.7%;
 }
 
 .button_1 {
@@ -39,6 +40,8 @@ h1 {
   padding: 0.9% 25% 0.9% 25%;
   margin-top: 0.7%;
   font-weight: 500;
+  padding-bottom: 2.2%;
+  padding-top: 2.2%;
 }
 
 /*SPOTIFY*/
@@ -147,8 +150,8 @@ h1 {
 .todo {
   background-color: blue;
   padding: 13.2%;
-  -webkit-clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
 .todo h2 {
@@ -162,6 +165,9 @@ h1 {
   border: none;
   opacity: 1;
   width: 90%;
+  font-weight: 600;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 :root {
