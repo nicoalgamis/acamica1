@@ -1,4 +1,5 @@
 /* H1, EL TEXTO Y BOTON*/
+
 .principal{
     margin-top: 10%;
     position: relative;
@@ -11,7 +12,6 @@ h1{
     color: #060A24;
     margin-bottom: auto;
     margin-top: 3.1%;
-    text-align: center;
     letter-spacing: 0;
     width: 90%;
 }
@@ -19,10 +19,7 @@ h1{
 .tachado{
     text-decoration: line-through;
 }
-.point{
-    color: blue;
-    
-}
+
 .text{
     font-family: 'IBM Plex Mono', monospace;
     margin-top: auto;
@@ -52,6 +49,7 @@ h1{
     clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
     width: 100%;
     margin-bottom: 0.4%;
+    
 }
 .episodios{
     color: rgb(255, 255, 255);
@@ -63,12 +61,14 @@ h1{
 }
 .podcast{
     width: 90.1%;
-    height: 4.1%;
+    height: 26.1%;
     margin: 0.2%;
     margin-left: auto;
+    border: none;
 }
 .contenedor{
     text-align: center;
+    height: 210vh;
 }
 // .contenedor{
 //     padding: 15px;
@@ -78,9 +78,10 @@ h1{
 
 // }
 
-/* SECTION PHONE */
+/* TELEFONO */
 .h2_phone{
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
     font-size: 4rem;
     width: 90%;
     color: #060A24;
@@ -109,7 +110,6 @@ h1{
 /*INVITADAS/OS*/
 .h2{
     font-size: 3.7rem;
-    width: 90%;
     font-weight: 400;
 }
 .div_invitadas{
@@ -127,11 +127,11 @@ h1{
     text-align: center;
     padding-inline-start: 0px; 
 }
-.icon{
+.margin img{
     width: 32.5%;
     height: 1.9%;
 }
-.icono p{
+.margin p{
     font-family: "IBMPlexSans-SemiBold";
     font-size: 2.5rem;
     font-weight: 600;
@@ -158,4 +158,152 @@ h1{
     font-weight: 600;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+
+@media screen and (min-width: 1000px){
+    // H1 TEXTO Y BOTON
+    .section1{
+        padding-left: 13.9%;
+    }
+
+    h1{
+        font-size: 4.7rem;
+        padding-top: 3.1%;
+    }
+    .point{
+        color: blue;
+    }
+
+    .text{
+        font-size: 1.2rem;
+        width: 63.6%;
+        color: #060A24;     
+        line-height: 24px;
+    }
+    .button_1{
+        padding: 0.5% 3% 0.5% 4%;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+
+    // PODCAST
+    .general{
+        clip-path: polygon(0 12%, 100% 0, 100% 86%, 0 100%);
+        height: 45vh;
+    }
+
+    .episodios{
+        margin: auto;
+        margin-left: 12%;
+        font-size: 3.6rem;
+    }
+    .contenedor{
+        height: 140vh;
+    }
+
+    .podcast{
+        width: 40.6%;
+        height: 40%;
+        border: none;
+        
+    }
+    .spoty1{
+        margin-right: 5%;
+    }
+
+
+    // TELEFONO
+    .general_phone{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img_phone{
+        height: 180vh;
+        width: 50%;
+        text-align: right;
+        margin-top: -6%;
+    }
+
+    .img_phone img{
+        height: 100%;
+
+    }
+    .div_phone{
+        width: 50%;
+    }
+
+    .h2_phone{
+        font-size: 3.6rem;
+        padding-left: 0%;
+    }
+    .text_phone{
+        font-size: 1.2rem;
+        width: 90%;
+    }   
+
+
+    // INVITADAS
+    .h2_invitadas{
+        padding-left: 13.9%;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 3.6rem;
+    }
+    .div_invitadas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .img_invitadas{
+        width: 100%;
+    }
+
+    // NUESTROS TEMAS
+    .section_temas{
+        height: 80vh;
+
+    }
+    .h2_temas{
+        padding-left: 13.9%;
+    }
+    .general_icon{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .margin{
+        text-align: center;
+    }
+    .margin img{
+        width: 30%;
+        height: auto;
+    }
+    .margin p{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    // ULTIMAS NOVEDADES
+    .todo{
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        height: 45vh;
+    }
+    .h2_novedades{
+        width: 100%;
+        padding: initial;
+    }
+    .div_button2{
+        padding-left: 25%;
+        height: 16vh;
+        width: 36vw;
+        
+    }
+    .button_2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        height: 100%;
+        width: 100%;
+        
+    }
+
 }

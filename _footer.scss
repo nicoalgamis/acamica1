@@ -9,3 +9,21 @@ footer section p{
     justify-content: space-evenly;
     padding-inline-start: 0px; 
 }
+
+@media screen and (min-width: 1000px){
+    .section_footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section_footer p{
+        padding-left: 10%;
+        font-size: 1.2rem;
+    }
+    .ul_footer{
+        padding-right: 10%;
+        padding-top: 1%;
+    }
+    .ul_footer li{
+        padding-left: 14.5%;
+    }
+}
