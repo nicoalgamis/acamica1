@@ -14,6 +14,7 @@ footer section p{
     .section_footer{
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
     .section_footer p{
         padding-left: 10%;
@@ -22,8 +23,9 @@ footer section p{
     .ul_footer{
         padding-right: 10%;
         padding-top: 1%;
+        text-align: center;
     }
     .ul_footer li{
-        padding-left: 14.5%;
+        padding-left: 3vw;
     }
 }

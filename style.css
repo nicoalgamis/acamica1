@@ -304,30 +304,143 @@ h1 {
   font-size: calc(8px + 0.55vw);
 }
 
-header ul {
-  display: none;
+nav {
+  position: relative;
+}
+
+.menu {
+  margin-top: -5vh;
+}
+
+nav .menu input:hover {
+  cursor: pointer;
+}
+
+.menu ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  background-color: blue;
+  padding-top: 10px;
+}
+
+.menu ul li {
+  padding-bottom: 5%;
+  position: relative;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  color: wheat;
+  font-weight: 600;
+}
+
+input[type="checkbox"]:checked ~ ul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.menu input {
+  display: block;
+  width: 40px;
+  margin-left: 90%;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+.menu span {
+  display: block;
+  width: 25px;
+  height: 2.5px;
+  margin-bottom: 6.5px;
+  margin-left: 90%;
+  position: relative;
+  background-color: black;
+  z-index: 1;
+  -webkit-transform-origin: 3px 0px;
+          transform-origin: 3px 0px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.menu span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.menu span:first-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.menu input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(2px, 1px);
+          transform: rotate(45deg) translate(2px, 1px);
+}
+
+.menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(1px, 0px);
+          transform: rotate(-45deg) translate(1px, 0px);
 }
 
 @media screen and (min-width: 1000px) {
-  .ul-nav {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: 6.9%;
-    height: 0;
-  }
-  .item-header {
-    margin-left: 3.3%;
-    color: #060A24;
-    font-size: 1rem;
-  }
   .logo {
     position: absolute;
-    margin-left: 6.9%;
+  }
+  nav {
+    padding: 2% 8% 0 8%;
+  }
+  .menu {
+    margin-top: 0vh;
+    width: 80%;
+  }
+  .menu input,
+  .menu span {
+    display: none;
+  }
+  .menu ul {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-align: right;
+    background-color: white;
+    z-index: -1;
+  }
+  .menu ul li {
+    display: inline-block;
+    padding: 1% 3% 0 0;
+  }
+  .menu ul li a {
+    color: black;
+    font-weight: 100;
   }
 }
 
@@ -357,6 +470,7 @@ footer section p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .section_footer p {
     padding-left: 10%;
@@ -365,9 +479,10 @@ footer section p {
   .ul_footer {
     padding-right: 10%;
     padding-top: 1%;
+    text-align: center;
   }
   .ul_footer li {
-    padding-left: 14.5%;
+    padding-left: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
