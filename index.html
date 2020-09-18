@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6bf04c5b33.js" crossorigin="anonymous"></script> 
-    <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
     <body>
-    <nav> 
+    <nav class="nav1"> 
         <!-- HEADER --> 
             <img src="./imagenes/logo.svg" alt="logo" class="logo">
+
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul>
-                    <li><a href="">EPISODIOS</a></li>
-                    <li><a href="">NOSOTROS</a></li>
-                    <li><a href="">ENTREVISTA</a></li>
-                    <li><a href="">TÓPICOS</a></li>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#invitadas">ENTREVISTA</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
                 </ul>
             </div>    
     </nav>
@@ -39,7 +34,7 @@
                     
         </section>
         <!--PODCAST-->
-        <section class="general">
+        <section id="episodios" class="general">
             <h2 class="episodios h2">Episodios</h2>
             <div class="contenedor">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" class="spoty1 podcast"></iframe>
@@ -49,10 +44,10 @@
             </div>
         </section>
         <!--TELEFONO-->
-        <section class="section_phone">
+        <section id="nosotros" class="section_phone">
             <div class="general_phone container">
                 <div class="img_phone">
-                    <img src="./imagenes/phone.png" alt="">
+                    <img src="./imagenes/phone.png" alt="imagen_teléfono">
                 </div>
         
                 <div class="div_phone">
@@ -68,20 +63,20 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!--LAS INVITADAS-->
+        <!--LAS INVITADAS-->
+        <section id="invitadas">
                 <h2 class="h2_invitadas h2">Invitadas/os estelares</h2>
                 <div class="div_invitadas">
                     <img src="./imagenes/grace-hopper.png" alt="imagen Invitadas" class="img_invitadas">
                     <img src="./imagenes/Katie-Bouman.png" alt="imagen Invitadas" class="img_invitadas">                
                     <img src="./imagenes/Margaret_Hamilton.png" alt="imagen Invitadas" class="img_invitadas">
                     <img src="./imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" alt="imagen Invitadas" class="img_invitadas down">
-                    <img src="./imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="imagen iInvitadas  down" class="img_invitadas">
+                    <img src="./imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="imagen iInvitadas" class="img_invitadas">
                     <img src="./imagenes/susan-kare.png" alt="imagen Invitadas" class="img_invitadas down">
                 </div>
         </section>
         <!-- NUESTROS TEMAS -->
-        <section class="">
+        <section id="topicos">
             <h2 class="h2_temas h2">Algunos de nuestros temas</h2>
                 <ul class="general_icon">
                     <li class="margin">

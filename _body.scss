@@ -27,6 +27,9 @@ h1{
     font-size: 1.2rem;
     margin-bottom: 6.7%;
 }
+.button_1:hover{
+    cursor: pointer;
+}
 .button_1{
     background-color: #00F3BB;
     font-family: 'IBM Plex Mono', monospace;
@@ -70,13 +73,6 @@ h1{
     text-align: center;
     height: 210vh;
 }
-// .contenedor{
-//     padding: 15px;
-//     position: relative;
-//     flex-wrap: wrap;
-//     display: flex;
-
-// }
 
 /* TELEFONO */
 .h2_phone{
@@ -165,6 +161,9 @@ h1{
     .section1{
         padding-left: 13.9%;
     }
+    .nav1 img{
+        z-index: 1;
+    }
 
     h1{
         font-size: 4.7rem;
@@ -184,6 +183,9 @@ h1{
         padding: 0.5% 3% 0.5% 4%;
         font-size: 1.3rem;
         font-weight: 600;
+    }
+    .button_1:hover{
+        color: red;
     }
 
 
