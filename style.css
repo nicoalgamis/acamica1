@@ -118,7 +118,7 @@ h1 {
 .div_invitadas {
   display: -ms-grid;
   display: grid;
-
+  -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
 }
 
