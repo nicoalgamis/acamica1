@@ -453,7 +453,7 @@ input[type="checkbox"]:checked ~ ul {
   }
 }
 
-footer section p {
+footer section div {
   font-size: 1.4rem;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
@@ -471,6 +471,10 @@ footer section p {
           padding-inline-start: 0px;
 }
 
+.ul_footer a {
+  color: black;
+}
+
 @media screen and (min-width: 1000px) {
   .section_footer {
     display: -webkit-box;
@@ -481,7 +485,7 @@ footer section p {
             justify-content: space-between;
     width: 100%;
   }
-  .section_footer p {
+  .section_footer div {
     padding-left: 10%;
     font-size: 1.2rem;
   }
@@ -492,6 +496,9 @@ footer section p {
   }
   .ul_footer li {
     padding-left: 3vw;
+  }
+  .ul_footer a {
+    color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */
